@@ -1,0 +1,6 @@
+This is a mirror of http://www.vim.org/scripts/script.php?script_id=799
+
+Change directory to the directory containing the current file and then repeatedly "cd .." until ./Makefile exists.
+You run it by enterning :call FindMakefile()
+I've mapped <F4> to a function that calls FindMakefile () and then does "mak %<.o"
+I needed this because using tags to jump to a source file sometimes left me with the wrong current working directory for this to work.
